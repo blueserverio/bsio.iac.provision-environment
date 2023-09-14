@@ -2,13 +2,19 @@
 
 To set up the project for local development, follow these steps:
 
+0. **Bootstrap Workstation**:
+    This command will create a new user named `Ansible`, setting the password to `Password1!`.  It will then setup the workstation for PowerShell Remoting to allow Ansible to run commands on the Windows workstation.  The following command should be run at an elevated Powershell prompt (RunAs Administrator):
+    ```powershell
+    iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/blueserverio/bsio.iac.provision-environment/main/bootstrap.ps1'))
+    ```
+
 1. **Clone the Repository**:
 
    ```bash
    git clone https://github.com/blueserverio/bsio.iac.provision-environment.git
    ```
 
-2. **Install Dependencies**:
+2. **Install Project Dependencies**:
     ```BASH
     cd bsio.iac.provision-environment/
     
