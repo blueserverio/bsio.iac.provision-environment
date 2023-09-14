@@ -1,0 +1,28 @@
+# Ignore compiled Python files
+*.pyc
+
+# Ignore logs and temp files
+*.log
+*.swp
+*.retry
+*.out
+*.pid
+
+# Ignore compiled Ansible playbooks
+*.retry
+
+# Ignore virtual environments
+venv/
+virtualenv/
+.venv/
+
+# Ignore Ansible fact caching directory
+.ansible_facts/
+
+# Ignore .DS_Store files (Mac specific)
+.DS_Store
+
+# Ignore any local secrets or sensitive information
+# You should manage these using a separate method (e.g., Ansible Vault)
+secrets.yml
+secrets.yaml
