@@ -18,3 +18,6 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw
 
 # Setup WinRM
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/blueserverio/bsio.iac.provision-environment/main/SetupWinRMForAnsible.ps1'))
+
+# Install WSL
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/blueserverio/bsio.iac.provision-environment/main/InstallWSL.ps1'))
