@@ -7,6 +7,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 # Install Git
 choco install git -y
 
+# Install VSCode
+choco install vscode -y
+
 # Create the Ansible User
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/blueserverio/bsio.iac.provision-environment/main/CreateAnsibleUser.ps1'))
 
