@@ -21,3 +21,9 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw
 
 # Install WSL
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/blueserverio/bsio.iac.provision-environment/main/InstallWSL.ps1'))
+
+# Update WSL
+wsl -u root -e sudo apt update -y
+
+# Upgrade WSL
+wsl -u root -e sudo apt upgrade -y
