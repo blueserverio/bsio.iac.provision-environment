@@ -27,3 +27,8 @@ wsl -u root -e sudo apt update -y
 
 # Upgrade WSL
 wsl -u root -e sudo apt upgrade -y
+
+# Install Ansible
+wsl -u root -e sudo apt install software-properties-common
+wsl -u root -e sudo add-apt-repository --yes --update ppa:ansible/ansible
+wsl -u root -e sudo apt install ansible -y
