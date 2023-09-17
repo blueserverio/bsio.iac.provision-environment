@@ -10,6 +10,9 @@ choco install git -y
 # Install VSCode
 choco install vscode -y
 
+# Install Google Chrome
+choco install googlechrome -y
+
 # Create the Ansible User
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/blueserverio/bsio.iac.provision-environment/main/CreateAnsibleUser.ps1'))
 
