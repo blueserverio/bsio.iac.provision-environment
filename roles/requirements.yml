@@ -1,4 +1,7 @@
 ---
 
+- name: bsio.iac.roles.provision_workstation
+  src: https://github.com/blueserverio/bsio.iac.roles.provision_workstation.git
+  
 - name: bsio.iac.roles.hyper_v
   src: https://github.com/blueserverio/bsio.iac.roles.hyper_v.git
