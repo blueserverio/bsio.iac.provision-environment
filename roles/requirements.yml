@@ -1,0 +1,5 @@
+---
+
+- name: bsio.iac.roles.hyper_v
+  src: git@github.com:blueserverio/bsio.iac.roles.hyper_v.git
+  scm: git
