@@ -15,12 +15,12 @@ Post workstation bootstrapping, follow the steps below to gear up for executing 
 
 1. **Clone the Repository**: Clone this repository with the command:
    ```bash
-   git clone https://github.com/blueserverio/bsio.iac.provision-environment.git
+   git clone https://github.com/blueserverio/bsio.iac.provision_environment.git
     ```
 
 2. **Install Project Dependencies**: Navigate to the repository directory and install the necessary dependencies: 
     ```BASH
-    cd bsio.iac.provision-environment/
+    cd bsio.iac.provision_environment/
     
     ansible-galaxy install -r requirements.yml -p roles/
     ```
