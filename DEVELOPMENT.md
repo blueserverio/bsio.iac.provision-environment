@@ -1,36 +1,42 @@
 # Development Setup
 
-To set up the project for local development, follow these steps:
+## Bootstrap Workstation
 
-0. **Bootstrap Workstation**:
-    This command will create a new user named `Ansible`, setting the password to `Password1!`.  It will then setup the workstation for PowerShell Remoting to allow Ansible to run commands on the Windows workstation.  The following command should be run at an elevated Powershell prompt (RunAs Administrator):
-    ```powershell
-    iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/blueserverio/bsio.iac.provision-environment/main/bootstrap.ps1'))
-    ```
+Before embarking on the development journey, ensure your workstation is primed with the essential tools. We offer two streamlined methods for this:
 
-1. **Clone the Repository**:
+1. **Automated Bootstrapping**: A swift, one-command method that equips your workstation with all necessary tools.
+2. **Manual Bootstrapping**: Comprehensive, step-by-step guidelines for manual tool installation and configuration.
 
+For a deep dive into both methods, please explore the [Workstation Bootstrap README](https://github.com/blueserverio/bsio.iac.scripts.workstation_bootstrap/blob/main/README.md) in the designated repository.
+
+## Project Setup
+
+Post workstation bootstrapping, follow the steps below to gear up for executing the provision environment playbook:
+
+1. **Clone the Repository**: Clone this repository with the command:
    ```bash
    git clone https://github.com/blueserverio/bsio.iac.provision-environment.git
-   ```
+    ```
 
-2. **Install Project Dependencies**:
+2. **Install Project Dependencies**: Navigate to the repository directory and install the necessary dependencies: 
     ```BASH
     cd bsio.iac.provision-environment/
     
     ansible-galaxy install -r requirements.yml -p roles/
     ```
 
-3. **Get Started**:
-    Refer to the [CONTRIBUTING.md](CONTRIBUTING.md) guide for information on how to contribute to the project.
+## Contributing
+We greatly value your contributions! If you're keen on enriching our project, we urge you to peruse our [CONTRIBUTING guidelines](CONTRIBUTING.md). Together, let's elevate the project to new heights.
  
-4. **Testing**:
-    If applicable, run tests to ensure your changes do not introduce any issues:
-    ```bash
-    # Add commands for running tests
-    ```
+## Testing
+***TODO***: This section awaits updates, primarily focusing on Molecule for playbook testing.  
 
-5. **Submit Pull Requests**:
-    When you're ready to submit your changes, create a pull request from your branch to the `main` branch of the original repository.
+## Submit Pull Requests
+Contributions are the backbone of open-source projects! Here's a step-by-step guide for submitting pull requests: 
+- **Fork the Repository**: This creates a copy under your profile.
+- **Create a Descriptive Branch**: Use the command git checkout -b my-feature-name to start a new feature or fix branch.
+- **Commit Your Changes**: Ensure your commit messages clearly communicate the intent.
+- **Push to Your Fork**: Use `git push origin my-feature-name` to update your forked repository.
+- **Initiate a Pull Request**: Target the `main` branch of the original repository.
 
-    Thank you for your contributions!
+Your endeavors are deeply appreciated. Thanks for being an integral part of our community!
