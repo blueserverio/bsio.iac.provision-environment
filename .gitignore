@@ -26,3 +26,4 @@ virtualenv/
 # You should manage these using a separate method (e.g., Ansible Vault)
 secrets.yml
 secrets.yaml
+testing.yml

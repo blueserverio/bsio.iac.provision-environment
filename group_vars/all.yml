@@ -1,0 +1,26 @@
+---
+wait_for_timeout: 900
+
+# Hyper-V Virtual Switch Vars
+hyper_v_physical_network_adapter_name: "Ethernet"
+hyper_v_virtual_switch_name: "External"
+
+oscdimg_download_path: 'C:\Temp\adksetup.exe'
+oscdimg_download_url: "https://download.microsoft.com/download/6/7/4/674ec7db-7c89-4f2b-8363-689055c2b430/adk/adksetup.exe"
+oscdimg_application_id: '{35712213-CBA3-43D3-F4A1-90DA83F27B23}'
+oscdimg_install_path: 'C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\Oscdimg'
+
+windows_server_temp_setup_file: 'C:\Temp\WindowsServer2022\setup.exe'
+windows_server_download_url: "https://software-static.download.prss.microsoft.com/sg/download/888969d5-f34g-4e03-ac9d-1f9786c66749/SERVER_EVAL_x64FRE_en-us.iso"
+windows_iso_file_path: 'C:\ISOs\windows_server_2022.iso'
+windows_iso_output_path: 'C:\ISOs\windows_server_2022_unattended.iso'
+
+linux_iso_file_path: '/tmp/ubuntu-22.04-live-server-amd64.iso'
+linux_iso_download_url: 'https://releases.ubuntu.com/22.04.3/ubuntu-22.04.3-live-server-amd64.iso'
+local_linux_iso_output_path: '/tmp/Ubuntu-22.04_unattended.iso'
+linux_iso_output_path: 'C:\ISOs\Ubuntu-22.04_unattended.iso'
+
+ubuntu_template_hostname: "linux-template-01"
+ubuntu_template_password: "Password1!" #Templorary Password, get's updated during provision time.
+ubuntu_template_username: "ansible"
+ubuntu_template_realname: "Ansible"
