@@ -3,7 +3,7 @@
   hosts: workstation
   gather_facts: no
   tasks:
-    - name: Install Hyper-V Feature
+    - name: Provision Workstation
       include_role: 
         name: bsio.iac.roles.provision_workstation
         tasks_from: provision_workstation
