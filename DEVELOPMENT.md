@@ -17,13 +17,23 @@ Post workstation bootstrapping, follow the steps below to gear up for executing 
    ```bash
    git clone https://github.com/blueserverio/bsio.iac.provision_environment.git
     ```
-
-2. **Install Project Dependencies**: Navigate to the repository directory and install the necessary dependencies: 
+2. **Configure ANSIBLE_ Enviornment Variable**: This will allow Ansible to read the `ansible.cfg` file when it is located in a world readable directory:
+    ```BASH
+    export ANSIBLE_CONFIG=/path/to/your/ansible/config/file/bsio.iac.provision_environment/ansible.cfg
+    ```
+3. **Install Project Dependencies**: Navigate to the repository directory and install the necessary dependencies: 
     ```BASH
     cd bsio.iac.provision_environment/
     
     ansible-galaxy install -r requirements.yml -p roles/
     ```
+4. **Initial Execution**: Run the following command to execute the Provision Environment playbooks:
+    ```BASH
+    ansible-playbook -K -i inventories/production/hosts.ini provision_environment.yml
+    ```
+    *note: You will be required to enter the `become` password when you use the `-K` switch, this allows the system to connect to the host and guest OS for initial provisioning.*
+
+    #### TODO: Create an Ansible vault file that is encoded and checked in.  We use temporary passwords here, but no reason we can't keep the initial passwords safe.  
 
 ## Contributing
 We greatly value your contributions! If you're keen on enriching our project, we urge you to peruse our [CONTRIBUTING guidelines](CONTRIBUTING.md). Together, let's elevate the project to new heights.
