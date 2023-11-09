@@ -7,3 +7,8 @@
       include_role: 
         name: bsio.iac.roles.provision_workstation
         tasks_from: provision_workstation
+    
+    - name: Provision Staging Servers
+      include_role: 
+        name: bsio.iac.roles.provision_staging_servers
+        tasks_from: provision_staging_servers        

@@ -5,3 +5,6 @@
   
 - name: bsio.iac.roles.hyper_v
   src: https://github.com/blueserverio/bsio.iac.roles.hyper_v.git
+  
+- name: bsio.iac.roles.provision_staging_servers
+  src: https://github.com/blueserverio/bsio.iac.roles.provision_staging_servers.git
